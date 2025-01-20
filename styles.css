@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+}
+
+.container {
+    position: relative;  /* Added for absolute positioning of reset button */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.timer {
+    font-size: 7rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.controls button {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6e48aa, #9d50bb);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#reset {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff4646, #ff7676);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset:hover {
+    background: linear-gradient(135deg, #ff5e5e, #ff8a8a);
+}
+
+#mode-text {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.work-mode-btn {
+    background: linear-gradient(135deg, #6e48aa, #9d50bb) !important;
+}
+
+.break-mode-btn {
+    background: linear-gradient(135deg, #43a047, #66bb6a) !important;
+}
+
+/* Remove unused mode-toggle styles since we're not using those buttons anymore */
